@@ -11,7 +11,7 @@ const Cards = () => {
     const fetchProductos = async () => {
       try {
         const response = await axios.get<Producto[]>(
-          "http://localhost:3000/api/productos"
+          "https://backend-cartas-production-5902.up.railway.app/api/productos"
         );
         setProductos(response.data);
       } catch (error) {

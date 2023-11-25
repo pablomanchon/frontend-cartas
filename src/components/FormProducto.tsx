@@ -41,7 +41,7 @@ export default function FormProducto() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/productos",
+        "https://backend-cartas-production-5902.up.railway.app/api/productos",
         formData
       );
       console.log(response.data);
